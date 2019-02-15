@@ -128,7 +128,7 @@ def reset():
 def add():
     try:
         try:
-            app.logger.error(vars(request))
+            app.logger.info(vars(request))
             parent_name = request.args['parent']
             childs_names = request.args['childs'].split(',')
         except:
